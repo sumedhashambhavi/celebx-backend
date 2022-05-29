@@ -47,7 +47,7 @@ var upload = multer({ storage: storage });
 */
 app.post('/upload', upload.single('image'), (req, response) => {
     const data = {
-        url: 'https://testing-8822.herokuapp.com/s/' + req.file.originalname
+        url: 'https://celebx-backend.herokuapp.com/s/' + req.file.originalname
     };
     const options = {
         headers: {
